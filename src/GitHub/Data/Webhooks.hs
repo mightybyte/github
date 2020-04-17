@@ -82,7 +82,7 @@ instance Binary RepoWebhookEvent
 
 data RepoWebhookResponse = RepoWebhookResponse
     { repoWebhookResponseCode    :: !(Maybe Int)
-    , repoWebhookResponseStatus  :: !Text
+    , repoWebhookResponseStatus  :: !(Maybe Text)
     , repoWebhookResponseMessage :: !(Maybe Text)
     }
   deriving (Show, Data, Typeable, Eq, Ord, Generic)
